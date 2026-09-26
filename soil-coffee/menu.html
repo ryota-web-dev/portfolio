@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | SOIL COFFEE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .menu-img-stack { display: flex; flex-direction: column; gap: 4px; position: sticky; top: 100px; }
+    @media (max-width: 900px) {
+      .menu-grid { grid-template-columns: 1fr; gap: 40px; }
+      .menu-img-stack { position: static; flex-direction: row; overflow-x: auto; }
+      .menu-img-stack .img-wrap { min-width: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav nav-solid">
+  <a href="index.html" class="nav-logo">SOIL COFFEE</a>
+  <ul class="nav-links">
+    <li><a href="index.html#concept">Concept</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="index.html#gallery-section">Gallery</a></li>
+    <li><a href="index.html#access-section">Access</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero" id="pageHero">
+  <div class="page-hero-bg" style="background-image: url('../images/cafe/louis-hansel-CqVS_klTib4-unsplash.jpg'); background-position: center 40%;"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-inner">
+    <span class="page-hero-en">Menu & Price</span>
+    <h1 class="page-hero-title">メニュー</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="menu-grid">
+
+      <!-- LEFT: MENU CONTENT -->
+      <div>
+        <!-- COFFEE -->
+        <div class="menu-section rv">
+          <span class="tag">Coffee</span>
+          <h2 class="hdg-sm">コーヒー</h2>
+          <table class="menu-table">
+            <tr>
+              <td class="m-name">ハンドドリップ</td>
+              <td class="m-desc">本日のシングルオリジン</td>
+              <td class="m-price">¥550</td>
+            </tr>
+            <tr>
+              <td class="m-name">エスプレッソ</td>
+              <td class="m-desc">ダブルショット</td>
+              <td class="m-price">¥400</td>
+            </tr>
+            <tr>
+              <td class="m-name">カフェラテ</td>
+              <td class="m-desc">Hot / Iced</td>
+              <td class="m-price">¥580</td>
+            </tr>
+            <tr>
+              <td class="m-name">カプチーノ</td>
+              <td class="m-desc">フォームミルク</td>
+              <td class="m-price">¥580</td>
+            </tr>
+            <tr>
+              <td class="m-name">フラットホワイト</td>
+              <td class="m-desc">ダブルリストレット</td>
+              <td class="m-price">¥600</td>
+            </tr>
+            <tr>
+              <td class="m-name">コールドブリュー</td>
+              <td class="m-desc">12時間低温抽出</td>
+              <td class="m-price">¥620</td>
+            </tr>
+            <tr>
+              <td class="m-name">SOIL ラテ</td>
+              <td class="m-desc">自家製キャラメル / 季節のスパイス</td>
+              <td class="m-price">¥700</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- OTHER DRINKS -->
+        <div class="menu-section rv">
+          <span class="tag">Other Drinks</span>
+          <h2 class="hdg-sm">その他のドリンク</h2>
+          <table class="menu-table">
+            <tr>
+              <td class="m-name">チャイラテ</td>
+              <td class="m-desc">自家製スパイスシロップ</td>
+              <td class="m-price">¥620</td>
+            </tr>
+            <tr>
+              <td class="m-name">ほうじ茶ラテ</td>
+              <td class="m-desc">京都産ほうじ茶</td>
+              <td class="m-price">¥580</td>
+            </tr>
+            <tr>
+              <td class="m-name">自家製レモネード</td>
+              <td class="m-desc">季節のフルーツ入り</td>
+              <td class="m-price">¥550</td>
+            </tr>
+            <tr>
+              <td class="m-name">クラフトジンジャーエール</td>
+              <td class="m-desc">生姜 × レモン × はちみつ</td>
+              <td class="m-price">¥550</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- FOOD -->
+        <div class="menu-section rv">
+          <span class="tag">Kitchen</span>
+          <h2 class="hdg-sm">フード</h2>
+          <table class="menu-table">
+            <tr>
+              <td class="m-name">アボカドトースト</td>
+              <td class="m-desc">自家製パン / 目玉焼きのせ</td>
+              <td class="m-price">¥980</td>
+            </tr>
+            <tr>
+              <td class="m-name">エッグベネディクト</td>
+              <td class="m-desc">スモークサーモン / オランデーズ</td>
+              <td class="m-price">¥1,280</td>
+            </tr>
+            <tr>
+              <td class="m-name">SOIL プレートランチ</td>
+              <td class="m-desc">日替わり / スープ・サラダ付き</td>
+              <td class="m-price">¥1,380</td>
+            </tr>
+            <tr>
+              <td class="m-name">グラノーラボウル</td>
+              <td class="m-desc">自家製グラノーラ / 季節のフルーツ / ヨーグルト</td>
+              <td class="m-price">¥880</td>
+            </tr>
+            <tr>
+              <td class="m-name">クロックムッシュ</td>
+              <td class="m-desc">グリュイエールチーズ / 自家製ベシャメル</td>
+              <td class="m-price">¥1,080</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- SWEETS -->
+        <div class="menu-section rv">
+          <span class="tag">Sweets</span>
+          <h2 class="hdg-sm">スイーツ</h2>
+          <table class="menu-table">
+            <tr>
+              <td class="m-name">本日のタルト</td>
+              <td class="m-desc">パティシエの日替わり</td>
+              <td class="m-price">¥680</td>
+            </tr>
+            <tr>
+              <td class="m-name">バスクチーズケーキ</td>
+              <td class="m-desc">濃厚 / ほろ苦キャラメル</td>
+              <td class="m-price">¥620</td>
+            </tr>
+            <tr>
+              <td class="m-name">自家製スコーン</td>
+              <td class="m-desc">クロテッドクリーム / 季節のジャム</td>
+              <td class="m-price">¥480</td>
+            </tr>
+            <tr>
+              <td class="m-name">アフォガート</td>
+              <td class="m-desc">バニラジェラート / エスプレッソ</td>
+              <td class="m-price">¥580</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu-note rv">
+          <p>※ 表示価格はすべて税込です</p>
+          <p>※ フードメニューは Morning / Lunch で提供時間が異なります</p>
+          <p>※ 季節限定メニューはInstagramにてお知らせしています</p>
+          <p>※ テイクアウト対応可能です</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: STICKY IMAGES -->
+      <div class="menu-img-stack rv rv-d2">
+        <div class="img-wrap ratio-32">
+          <img src="../images/cafe/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" alt="アイスコーヒー">
+        </div>
+        <div class="img-wrap ratio-32">
+          <img src="../images/cafe/ben-kolde-FFqNATH27EM-unsplash.jpg" alt="アボカドトースト">
+        </div>
+        <div class="img-wrap ratio-32">
+          <img src="../images/cafe/breakslow-E6RTpqvOasU-unsplash.jpg" alt="カフェタイム">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="cta-bg" style="background-image: url('../images/cafe/minku-kang-67EZZZl6jeI-unsplash.jpg');"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-inner rv">
+    <h2 class="hdg">Come find your cup.</h2>
+    <p class="desc">あなたの一杯を、見つけに来てください。</p>
+    <a href="index.html#access-section" class="btn btn-ghost">Access</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">SOIL COFFEE</a>
+    <div class="footer-links">
+      <a href="index.html#concept">Concept</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#access-section">Access</a>
+    </div>
+    <span class="footer-text">© 2024 SOIL COFFEE. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('pageHero').classList.add('loaded');
+  });
+  const rvEls = document.querySelectorAll('.rv');
+  const rvObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); rvObs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  rvEls.forEach(el => rvObs.observe(el));
+</script>
+
+</body>
+</html>

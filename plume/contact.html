@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Plume</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Plume</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="access.html">Access</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero" id="pageHero">
+  <div class="page-hero-bg" style="background-image: url('../images/Plume/quentin-mahe-mAW3jUP6G6E-unsplash.jpg'); background-position: center 30%;"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-inner">
+    <span class="page-hero-en">Contact</span>
+    <h1 class="page-hero-title">ご予約・お問い合わせ</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+
+      <div class="reveal">
+        <span class="label">Note</span>
+        <h2 class="heading-sm">ご予約の前に</h2>
+        <div class="divider"></div>
+        <p class="lead">
+          当サロンは完全予約制です。<br>
+          ご予約はフォームまたはお電話にてお承りします。<br><br>
+          初回ご来店の方には、施術前に30分ほどカウンセリングの時間を設けております。<br>
+          なりたいスタイルのイメージ画像などがあれば、ぜひお持ちください。<br><br>
+          キャンセルは前日18時までにご連絡ください。<br>
+          当日キャンセルはキャンセル料（50%）が発生します。
+        </p>
+
+        <div style="margin-top:40px; padding:28px; border:1px solid var(--border);">
+          <span class="label" style="margin-bottom:8px;">Phone</span>
+          <p style="font-family:var(--serif); font-size:26px; font-weight:300; color:var(--accent);">03-1234-5678</p>
+          <p style="font-size:12px; color:var(--muted); margin-top:6px;">受付時間：火〜土 10:00–19:00 / 日祝 10:00–17:00（月曜休）</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d2">
+        <span class="label">Form</span>
+        <h2 class="heading-sm">予約フォーム</h2>
+        <div class="divider"></div>
+
+        <form class="form-wrap" action="#" method="post">
+          <div class="form-row">
+            <label class="form-label">お名前 <em class="req">*</em></label>
+            <input class="form-input" type="text" name="name" placeholder="山田 花子" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label">電話番号 <em class="req">*</em></label>
+            <input class="form-input" type="tel" name="tel" placeholder="090-1234-5678" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label">メールアドレス</label>
+            <input class="form-input" type="email" name="email" placeholder="example@mail.com">
+          </div>
+          <div class="form-row">
+            <label class="form-label">ご希望メニュー <em class="req">*</em></label>
+            <select class="form-select" name="menu" required>
+              <option value="" disabled selected>選択してください</option>
+              <option>カット</option>
+              <option>カット＋カラー</option>
+              <option>カット＋トリートメント</option>
+              <option>縮毛矯正</option>
+              <option>カラーのみ</option>
+              <option>その他・相談したい</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label">ご希望日時（第1〜第3希望）<em class="req">*</em></label>
+            <input class="form-input" type="text" name="date" placeholder="例）11/10(日) 13:00 / 11/12(火) 午前中" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label">ご質問・ご要望</label>
+            <textarea class="form-textarea" name="message" placeholder="髪のお悩みや気になることがあればお気軽にどうぞ。"></textarea>
+          </div>
+          <button type="submit" class="btn btn-fill" style="width:100%; padding:16px; font-size:11px; letter-spacing:0.2em; border:none; cursor:pointer;">
+            送信する
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="index.html" class="footer-logo">Plume</a>
+  <span>東京都渋谷区代官山1-2-3 〒150-0034</span>
+  <span>© 2024 Plume. All rights reserved.</span>
+</footer>
+
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('pageHero').classList.add('loaded');
+  });
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

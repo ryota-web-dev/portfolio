@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Plume</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery-full {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 48px;
+    }
+    .gallery-full .img-box { cursor: pointer; }
+    .gallery-full .img-box:not(.wide) { aspect-ratio: 1; }
+    .gallery-full .img-box.wide { grid-column: span 2; aspect-ratio: 2/1; }
+
+    @media (max-width: 640px) {
+      .gallery-full { grid-template-columns: repeat(2, 1fr); }
+      .gallery-full .img-box.wide { grid-column: span 1; aspect-ratio: 1; }
+    }
+  </style>
+</head>
+<body class="inner-page">
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Plume</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="access.html">Access</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero" id="pageHero">
+  <div class="page-hero-bg" style="background-image: url('../images/Plume/masiha-olfi-CxsH6E9lqCo-unsplash.jpg'); background-position: center 30%;"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-inner">
+    <span class="page-hero-en">Gallery</span>
+    <h1 class="page-hero-title">スタイルギャラリー</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <p class="lead reveal">カット・カラー・パーマなど、施術後のスタイルをご紹介します。<br>「こんな感じに仕上げたい」というイメージのご参考にどうぞ。</p>
+
+    <!-- Cut -->
+    <div style="margin-top:72px;" class="reveal">
+      <span class="label">Cut</span>
+      <h2 class="heading-sm">カット</h2>
+      <div class="gallery-full">
+        <div class="img-box">
+          <img src="../images/Plume/jakub-flis-eU0-jsdoGGo-unsplash.jpg" class="img-fill" alt="カットスタイル" style="object-position: center 20%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/lu-TcWwRcf92GY-unsplash.jpg" class="img-fill" alt="カットスタイル">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/michael-dagonakis-c-SBcqkApls-unsplash.jpg" class="img-fill" alt="カットスタイル" style="object-position: center 15%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/michael-dagonakis-c-SBcqkApls-unsplash.jpg" class="img-fill" alt="カットスタイル" style="object-position: center 15%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/roksolana-zasiadko-LyeduBb2Auk-unsplash.jpg" class="img-fill" alt="カットスタイル" style="object-position: center 20%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/andrey-zvyagintsev-cRe4DeHtmsw-unsplash.jpg" class="img-fill" alt="カットスタイル" style="object-position: right center;">
+        </div>
+        <div class="img-box wide">
+          <img src="../images/Plume/masiha-olfi-CxsH6E9lqCo-unsplash.jpg" class="img-fill" alt="カットスタイル" style="object-position: center 30%;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Color -->
+    <div style="margin-top:88px;" class="reveal">
+      <span class="label">Color</span>
+      <h2 class="heading-sm">カラー</h2>
+      <div class="gallery-full">
+        <div class="img-box">
+          <img src="../images/Plume/ionela-mat-koWiggH8fmE-unsplash.jpg" class="img-fill" alt="カラー施術" style="object-position: center 20%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/apostolos-vamvouras-rlssYWVokeA-unsplash.jpg" class="img-fill" alt="カラースタイル" style="object-position: center 15%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/chalo-garcia-EdbjfLaNiFw-unsplash.jpg" class="img-fill" alt="スタイリング" style="object-position: center 20%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/engin-akyurt-Ix4D4-8cQUU-unsplash.jpg" class="img-fill" alt="アレンジスタイル" style="object-position: center 20%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/lindsay-cash-x1UvHQ-OWvw-unsplash.jpg" class="img-fill" alt="施術シーン" style="object-position: center 20%;">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/yovanka-loria-salon-ofa5X21-Z2c-unsplash.jpg" class="img-fill" alt="サロン施術" style="object-position: center 25%;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Treatment / Straight -->
+    <div style="margin-top:88px;" class="reveal">
+      <span class="label">Straightening &amp; Treatment</span>
+      <h2 class="heading-sm">縮毛矯正・トリートメント</h2>
+      <div class="gallery-full" style="grid-template-columns:repeat(3,1fr);">
+        <div class="img-box">
+          <img src="../images/Plume/quentin-mahe-mAW3jUP6G6E-unsplash.jpg" class="img-fill" alt="トリートメント施術">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/benyamin-bohlouli-LGXN4OSQSa4-unsplash.jpg" class="img-fill" alt="サロン内観">
+        </div>
+        <div class="img-box">
+          <img src="../images/Plume/benyamin-bohlouli-dDhWJLXEZ5I-unsplash.jpg" class="img-fill" alt="サロン内観">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-band-bg"></div>
+  <div class="cta-band-overlay"></div>
+  <div class="cta-band-inner container reveal">
+    <h2 class="heading">気になるスタイルはありましたか？</h2>
+    <p class="lead">画像をお見せいただくだけで大丈夫です。<br>カウンセリングであなたに合う形に調整します。</p>
+    <a href="contact.html" class="btn btn-light">ご予約はこちら</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="index.html" class="footer-logo">Plume</a>
+  <span>東京都渋谷区代官山1-2-3 〒150-0034</span>
+  <span>© 2024 Plume. All rights reserved.</span>
+</footer>
+
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('pageHero').classList.add('loaded');
+  });
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
